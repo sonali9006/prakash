@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+<table align="center" border="2">
+    <tr>
+        <th>ID</th>
+        <th>NAME</th>
+        <th>SALARY</th>
+    </tr>
+    {% for x,y  in d.items %}
+        <tr>
+        <th>{{ x }}</th>
+        <th>{{ y.name }}</th>
+        <th>{{ y.sal }}</th>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
